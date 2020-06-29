@@ -181,7 +181,7 @@ export default function MetaTags() {
               <li><a href="https://jsonplaceholder.typicode.com/" rel="noopener noreferrer" target="_blank">JSONPlaceholder</a></li>
               <li><a href="https://www.coingecko.com/en" rel="noopener noreferrer" target="_blank">coinGecko</a></li>
               <li><a href="https://quotes.rest/" rel="noopener noreferrer" target="_blank">Quotes REST API</a></li>
-              <li><a href="https://insomnia.rest/" rel="noopener noreferrer" target="_blank">Insomnia(for designing yown APIs)</a></li>
+              <li><a href="https://insomnia.rest/" rel="noopener noreferrer" target="_blank">Insomnia(for designing own APIs)</a></li>
               <li><a href="https://bundlephobia.com/" rel="noopener noreferrer" target="_blank">BundlePhobia</a></li>
             </ul>
           </li>
