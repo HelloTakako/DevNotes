@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
+import BackToTopLink from '../components/BackToTopLink'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function DomainAndHosting() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
 
   return (
     <div className="container">
@@ -13,37 +15,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-        &#9998;Dev Notes
-        </h1>
-
-        {/* Don't add className to <Link> tag, add it to <a> tag. */}
-        <div className="grid">
-          <Link href="meta-tags">
-            <a className="card">
-              <h3>Meta Tags &rarr;</h3>
-              <p>Meta tags cheatsheet for SEO</p>
-            </a>
-          </Link>
-          <Link href="/htaccess">
-            <a className="card">
-              <h3>.htaccess &rarr;</h3>
-              <p>Apache .htaccess configuration cheatsheet</p>
-            </a>
-          </Link>
-          <Link href="/robots-txt">
-            <a className="card">
-              <h3>robots.txt &rarr;</h3>
-              <p>Manage search engine crawlers traffic</p>
-            </a>
-          </Link>
-          <Link href="/useful-links">
-            <a className="card">
-              <h3>Useful Links &rarr;</h3>
-              <p>Resources in the globe</p>
-            </a>
-          </Link>
-        </div>
+        &#10155;Under Construction
+        <br /><br />
+        <BackToTopLink />
       </main>
 
       <Footer />
