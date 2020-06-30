@@ -91,14 +91,14 @@ export default function MetaTags() {
           </li>
 
           <li>
-            <h4>Images compression</h4>
+            <h4>Images Compression</h4>
             <ul>
               <li><a href="https://tinypng.com/" rel="noopener noreferrer" target="_blank">TinyPng</a></li>
             </ul>
           </li>
 
           <li>
-            <h4>Website analysis</h4>
+            <h4>Website Analysis</h4>
             <ul>
               <li><a href="https://developers.google.com/speed/pagespeed/insights/" rel="noopener noreferrer" target="_blank">Google Speed Insights</a></li>
               <li><a href="https://tools.pingdom.com/" rel="noopener noreferrer" target="_blank">Pingdom Tools</a></li>
@@ -201,15 +201,14 @@ export default function MetaTags() {
 
           <li>
             <h4>Free Animation Library for Websites</h4>
-            <ul>       
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">CSSHake</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Anime.js </a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Bounce.js</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Mo.js</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Tuesday</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Wicked css</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">Magic</a></li>
-              <li><a href="https://web.dev/extract-critical-css/" rel="noopener noreferrer" target="_blank">GSAP</a></li>
+            <ul>
+              <li><a href="https://greensock.com/gsap/" rel="noopener noreferrer" target="_blank">GSAP</a></li>      
+              <li><a href="https://elrumordelaluz.github.io/csshake/" rel="noopener noreferrer" target="_blank">CSSHake</a></li>
+              <li><a href="https://animejs.com/" rel="noopener noreferrer" target="_blank">Anime.js</a></li>
+              <li><a href="http://bouncejs.com/" rel="noopener noreferrer" target="_blank">Bounce.js</a></li>
+              <li><a href="https://mojs.github.io/" rel="noopener noreferrer" target="_blank">Mo.js</a></li>
+              <li><a href="https://github.com/kristofferandreasen/wickedCSS" rel="noopener noreferrer" target="_blank">Wicked css</a></li>
+              <li><a href="https://scrollmagic.io/" rel="noopener noreferrer" target="_blank">ScrollMagic</a></li>
             </ul>
           </li>
 
