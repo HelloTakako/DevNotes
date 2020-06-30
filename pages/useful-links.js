@@ -240,6 +240,7 @@ export default function MetaTags() {
           display: flex;
           flex-wrap: wrap;
           align-self: baseline;
+          padding-left: 0px;
         }
         .links-list ul{
           padding-left: 0px!important;
@@ -322,7 +323,8 @@ export default function MetaTags() {
 
         @media (max-width: 600px) {
           .grid {
-            width: 100%;
+            width: 90%;
+            pading: 0 5%;
             flex-direction: column;
           }
         }
