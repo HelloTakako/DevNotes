@@ -249,7 +249,7 @@ export default function MetaTags() {
           list-style: none;
         }
         .links-list>li{
-          width: 48%;
+          width: 47%;
         }
         .links-list>li li{
           margin-bottom: 5px;
@@ -258,7 +258,7 @@ export default function MetaTags() {
           content:"- "
         }
         .links-list>li:nth-child(2n-1){
-          margin-right: 4%;
+          margin-right: 6%;
         }
         .links-list h4{
           font-size: 20px;
@@ -323,8 +323,8 @@ export default function MetaTags() {
 
         @media (max-width: 600px) {
           .grid {
-            width: 90%;
-            pading: 0 5%;
+            width: 94%;
+            pading: 0 3%;
             flex-direction: column;
           }
         }

@@ -4,7 +4,7 @@ export default function BackToTopLink() {
 
   return (
     <>
-        <Link href="/"><a>Back to Top</a></Link>
+        <Link href="/"><a>Back to Home</a></Link>
         <style jsx>{`
             a {
                 text-decoration: underline;
