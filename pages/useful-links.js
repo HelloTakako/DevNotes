@@ -141,6 +141,7 @@ export default function MetaTags() {
             <h4>Wireframing &amp; Mock-up</h4>
             <ul>
               <li><a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma</a></li>
+              <li><a href="https://www.canva.com/" rel="noopener noreferrer" target="_blank">Canva</a></li>
               <li><a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en" rel="noopener noreferrer" target="_blank">VisBug(Chrome Exstension)</a></li>
             </ul>
           </li>
@@ -149,7 +150,11 @@ export default function MetaTags() {
             <h4>Color Pallete</h4>
             <ul>
               <li><a href="https://color.adobe.com/create/color-wheel/" rel="noopener noreferrer" target="_blank">Adobe Color</a></li>
-              <li><a href="https://materialuicolors.co/" rel="noopener noreferrer" target="_blank">materialuicolors</a></li>
+              <li><a href="https://materialuicolors.co/" rel="noopener noreferrer" target="_blank">material UI Colors</a></li>
+              <li><a href="https://coolors.co/" rel="noopener noreferrer" target="_blank">Coolors</a></li>
+              <li><a href="https://www.canva.com/colors/color-palette-generator/" rel="noopener noreferrer" target="_blank">Canva Color Pallete Generator (from images)</a></li>
+              <li><a href="https://www.canva.com/colors/color-wheel/" rel="noopener noreferrer" target="_blank">Canva Color Wheel</a></li>
+              <li><a href="https://htmlcolorcodes.com/" rel="noopener noreferrer" target="_blank">HTML Color Codes</a></li>  
             </ul>
           </li>
 
@@ -165,9 +170,21 @@ export default function MetaTags() {
           </li>
 
           <li>
+            <h4>Free Hosting</h4>
+            <ul>
+              <li><a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank">Netlify</a></li>
+              <li><a href="https://www.heroku.com/" rel="noopener noreferrer" target="_blank">Heroku</a></li>
+              <li><a href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">GitHub pages</a></li>
+              <li><a href="https://vercel.com/" rel="noopener noreferrer" target="_blank">Vercel</a></li>
+              <li><a href="https://firebase.google.com/docs/hosting/quickstart" rel="noopener noreferrer" target="_blank">Google Firebase Hosting</a></li> 
+            </ul>
+          </li>
+
+          <li>
             <h4>Regular Expressions(Regex)</h4>
             <ul>
               <li><a href="https://regexr.com/" rel="noopener noreferrer" target="_blank">RegExr</a></li>
+              <li><a href="https://regex101.com/" rel="noopener noreferrer" target="_blank">RegEx101</a></li>
             </ul>
           </li>
 
