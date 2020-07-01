@@ -19,6 +19,15 @@ export default function MetaTags() {
         &#9998;Useful Links
         </h1>
         <div className="grid">
+
+          {/* <select id="link-categories">
+            <option value="all">All</option>
+            <option value="ux-seo">UX/SEO</option>
+            <option value="design">Graphic/UI Design</option>
+            <option value="frontend">Front-end Developement</option>
+            <option value="backend">Back-end Developement</option>
+          </select> */}
+
           <ul className="links-list">
           <li>
             <h4>Photos</h4>
@@ -98,19 +107,13 @@ export default function MetaTags() {
           </li>
 
           <li>
-            <h4>Page Loading Speed Analysis</h4>
-            <ul>
-              <li><a href="https://developers.google.com/speed/pagespeed/insights/" rel="noopener noreferrer" target="_blank">Google Speed Insights</a></li>
-              <li><a href="https://tools.pingdom.com/" rel="noopener noreferrer" target="_blank">Pingdom Tools</a></li>
-              <li><a href="https://www.webpagetest.org/" rel="noopener noreferrer" target="_blank">WEBPAGETEST</a></li>  
-            </ul>
-          </li>
-
-          <li>
             <h4>UX/SEO Analysis</h4>
             <ul>
               <li><a href="https://matomo.org/" rel="noopener noreferrer" target="_blank">Matomo</a><p className="tool-desc">A self-hosted alternative to Google Analytics which lets you do more analytics and UX research</p></li>
               <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" rel="noopener noreferrer" target="_blank">Lighthouse</a><p className="tool-desc">For webpage audits. Available on Google Chrome Extension / Chrome Dev Tools.</p></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/" rel="noopener noreferrer" target="_blank">Google Speed Insights</a></li>
+              <li><a href="https://tools.pingdom.com/" rel="noopener noreferrer" target="_blank">Pingdom Tools</a></li>
+              <li><a href="https://www.webpagetest.org/" rel="noopener noreferrer" target="_blank">WEBPAGETEST</a></li> 
             </ul>
           </li>
 
@@ -248,6 +251,9 @@ export default function MetaTags() {
               <li><a href="https://mojs.github.io/" rel="noopener noreferrer" target="_blank">Mo.js</a></li>
               <li><a href="https://github.com/kristofferandreasen/wickedCSS" rel="noopener noreferrer" target="_blank">Wicked css</a></li>
               <li><a href="https://scrollmagic.io/" rel="noopener noreferrer" target="_blank">ScrollMagic</a></li>
+              <li><a href="https://animate.style/" rel="noopener noreferrer" target="_blank">animate.css</a></li>
+              <li><a href="https://github.com/visionmedia/move.js" rel="noopener noreferrer" target="_blank">move.js</a></li>
+              <li><a href="http://velocityjs.org/" rel="noopener noreferrer" target="_blank">velocity.js</a></li>
             </ul>
           </li>
 
