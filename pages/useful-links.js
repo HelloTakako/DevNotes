@@ -98,7 +98,7 @@ export default function MetaTags() {
           </li>
 
           <li>
-            <h4>Website Analysis</h4>
+            <h4>Page Loading Speed Analysis</h4>
             <ul>
               <li><a href="https://developers.google.com/speed/pagespeed/insights/" rel="noopener noreferrer" target="_blank">Google Speed Insights</a></li>
               <li><a href="https://tools.pingdom.com/" rel="noopener noreferrer" target="_blank">Pingdom Tools</a></li>
@@ -107,22 +107,33 @@ export default function MetaTags() {
           </li>
 
           <li>
+            <h4>UX/SEO Analysis</h4>
+            <ul>
+              <li><a href="https://matomo.org/" rel="noopener noreferrer" target="_blank">Matomo</a><p className="tool-desc">A self-hosted alternative to Google Analytics which lets you do more analytics and UX research</p></li>
+              <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" rel="noopener noreferrer" target="_blank">Lighthouse</a><p className="tool-desc">For webpage audits. Available on Google Chrome Extension / Chrome Dev Tools.</p></li>
+            </ul>
+          </li>
+
+          <li>
             <h4>For Developers</h4>
             <ul>
-              <li><a href="https://repl.it/" rel="noopener noreferrer" target="_blank">Repl</a></li>
+              <li><a href="https://repl.it/" rel="noopener noreferrer" target="_blank">Repl</a><p className="tool-desc">Free, collaborative, in-browser IDE to code in 50+ languages</p></li>
               <li><a href="https://codeshare.io/" rel="noopener noreferrer" target="_blank">Codeshare</a></li>
               <li><a href="https://devhints.io/" rel="noopener noreferrer" target="_blank">Devhints</a></li>
-              <li><a href="https://domainr.com/" rel="noopener noreferrer" target="_blank">Domainr(Domain name search)</a></li>
+              <li><a href="https://domainr.com/" rel="noopener noreferrer" target="_blank">Domainr</a><p className="tool-desc">Domain name search</p></li>
               <li><a href="https://codinghub.tips/" rel="noopener noreferrer" target="_blank">Coding hub tips</a></li> 
-              <li><a href="https://cunningbot.com/" rel="noopener noreferrer" target="_blank">Cunning bot(Domain Name Generator and Search Engine)</a></li>
+              <li><a href="https://cunningbot.com/" rel="noopener noreferrer" target="_blank">Cunning bot</a><p className="tool-desc">Domain Name Generator and Search Engine</p></li>
               <li><a href="https://www.codewars.com/" rel="noopener noreferrer" target="_blank">Codewars</a></li>
-              <li><a href="https://dbdiagram.io/home" rel="noopener noreferrer" target="_blank">Dbdiagram(Database Relationship Diagrams Design Tool)</a></li>
+              <li><a href="https://dbdiagram.io/home" rel="noopener noreferrer" target="_blank">Dbdiagram</a><p className="tool-desc">Database Relationship Diagrams Design Tool</p></li>
               <li><a href="https://caniuse.com/" rel="noopener noreferrer" target="_blank">Can I Use</a></li>
               <li><a href="https://enjoycss.com/" rel="noopener noreferrer" target="_blank">Enjoy CSS</a></li>
               <li><a href="https://www.htmlwasher.com/" rel="noopener noreferrer" target="_blank">HTML Washer</a></li>
               <li><a href="https://validator.w3.org/" rel="noopener noreferrer" target="_blank">Markup Validator</a></li>
-              <li><a href="https://cloudcraft.co/" rel="noopener noreferrer" target="_blank">Cloudcraft(Draw AWS diagrams)</a></li>
+              <li><a href="https://cloudcraft.co/" rel="noopener noreferrer" target="_blank">Cloudcraft</a><p className="tool-desc">Draw AWS diagrams</p></li>
               <li><a href="https://fontflipper.com/upload" rel="noopener noreferrer" target="_blank">Font Flipper</a></li>
+              <li><a href="https://responsively.app/" rel="noopener noreferrer" target="_blank">Responsively App</a></li>
+              <li><a href="https://ngrok.com/" rel="noopener noreferrer" target="_blank">ngrok</a><p className="tool-desc">ngrok lets you share remote tunnels from localhost to external servers (so for websites or web apps) with http/https, these links expire after 8 hours</p></li>
+              <li><a href="http://youmightnotneedjquery.com/" rel="noopener noreferrer" target="_blank">You might not need jQuery</a></li>
             </ul>
           </li>
 
@@ -147,12 +158,23 @@ export default function MetaTags() {
           </li>
 
           <li>
+            <h4>Chrome Extension for Front-End Development</h4>
+            <ul>
+              <li><a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?hl=en" rel="noopener noreferrer" target="_blank">CSS Peeper</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" rel="noopener noreferrer" target="_blank">Whatfont</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" rel="noopener noreferrer" target="_blank">JSON viewer</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en" rel="noopener noreferrer" target="_blank">Colorpick eyedropper</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo?hl=en" rel="noopener noreferrer" target="_blank">Responsive web design tester</a></li>
+            </ul>
+          </li>
+
+          <li>
             <h4>Color Pallete</h4>
             <ul>
               <li><a href="https://color.adobe.com/create/color-wheel/" rel="noopener noreferrer" target="_blank">Adobe Color</a></li>
               <li><a href="https://materialuicolors.co/" rel="noopener noreferrer" target="_blank">material UI Colors</a></li>
               <li><a href="https://coolors.co/" rel="noopener noreferrer" target="_blank">Coolors</a></li>
-              <li><a href="https://www.canva.com/colors/color-palette-generator/" rel="noopener noreferrer" target="_blank">Canva Color Pallete Generator (from images)</a></li>
+              <li><a href="https://www.canva.com/colors/color-palette-generator/" rel="noopener noreferrer" target="_blank">Canva Color Pallete Generator</a><p className="tool-desc">Generate a color pallete from an image</p></li>
               <li><a href="https://www.canva.com/colors/color-wheel/" rel="noopener noreferrer" target="_blank">Canva Color Wheel</a></li>
               <li><a href="https://htmlcolorcodes.com/" rel="noopener noreferrer" target="_blank">HTML Color Codes</a></li>  
             </ul>
@@ -198,7 +220,7 @@ export default function MetaTags() {
               <li><a href="https://jsonplaceholder.typicode.com/" rel="noopener noreferrer" target="_blank">JSONPlaceholder</a></li>
               <li><a href="https://www.coingecko.com/en" rel="noopener noreferrer" target="_blank">coinGecko</a></li>
               <li><a href="https://quotes.rest/" rel="noopener noreferrer" target="_blank">Quotes REST API</a></li>
-              <li><a href="https://insomnia.rest/" rel="noopener noreferrer" target="_blank">Insomnia(for designing own APIs)</a></li>
+              <li><a href="https://insomnia.rest/" rel="noopener noreferrer" target="_blank">Insomnia</a><p className="tool-desc">For designing own APIs</p></li>
               <li><a href="https://bundlephobia.com/" rel="noopener noreferrer" target="_blank">BundlePhobia</a></li>
             </ul>
           </li>
@@ -232,7 +254,8 @@ export default function MetaTags() {
           <li>
             <h4>Misc.</h4>
             <ul>
-              <li><a href="https://carbon.now.sh/" rel="noopener noreferrer" target="_blank">carbon</a></li> 
+              <li><a href="https://carbon.now.sh/" rel="noopener noreferrer" target="_blank">carbon</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg?hl=en" rel="noopener noreferrer" target="_blank">Link to Text Fragment</a><p className="tool-desc">Chrome Extension for sharing documentation references easier</p></li>
             </ul>
           </li>
         </ul>
@@ -269,7 +292,7 @@ export default function MetaTags() {
           width: 47%;
         }
         .links-list>li li{
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
         .links-list>li li:before{
           content:"- "
@@ -279,7 +302,7 @@ export default function MetaTags() {
         }
         .links-list h4{
           font-size: 20px;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
         .links-list a{
           text-decoration: underline;
@@ -336,6 +359,12 @@ export default function MetaTags() {
         .title,
         .description {
           text-align: center;
+        }
+
+        .tool-desc {
+          font-size:80%;
+          color: #666;
+          margin: 3px 0 0 11px;
         }
 
         @media (max-width: 600px) {
