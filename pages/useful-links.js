@@ -182,8 +182,9 @@ export default function MetaTags() {
               <li><a href="https://cloudcraft.co/" rel="noopener noreferrer" target="_blank">Cloudcraft</a><p className="tool-desc">Draw AWS diagrams</p></li>
               <li><a href="https://fontflipper.com/upload" rel="noopener noreferrer" target="_blank">Font Flipper</a></li>
               <li><a href="https://responsively.app/" rel="noopener noreferrer" target="_blank">Responsively App</a></li>
-              <li><a href="https://ngrok.com/" rel="noopener noreferrer" target="_blank">ngrok</a><p className="tool-desc">ngrok lets you share remote tunnels from localhost to external servers (so for websites or web apps) with http/https, these links expire after 8 hours</p></li>
-              <li><a href="http://youmightnotneedjquery.com/" rel="noopener noreferrer" target="_blank">You might not need jQuery</a></li>
+              <li><a href="https://ngrok.com/" rel="noopener noreferrer" target="_blank">ngrok</a><p className="tool-desc">Share remote tunnels from localhost to external servers (so for websites or web apps) with http/https</p></li>
+              <li><a href="http://youmightnotneedjquery.com/" rel="noopener noreferrer" target="_blank">You might not need jQuery</a><p className="tool-desc">Vanilla JavaScript code snippets alternative to jQuery</p></li>
+              <li><a href="https://yoksel.github.io/flex-cheatsheet/" rel="noopener noreferrer" target="_blank">Flexbox Cheatsheet</a></li>
             </ul>
           </li>
 
@@ -332,6 +333,7 @@ export default function MetaTags() {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
+          justify-content: space-between;
           align-self: baseline;
           padding-left: 0px;
         }
@@ -342,7 +344,7 @@ export default function MetaTags() {
           list-style: none;
         }
         #links-list>li{
-          width: 47%;
+          width: 45%;
           transition: 0.5s;
           display:none;
         }
@@ -351,9 +353,6 @@ export default function MetaTags() {
         }
         #links-list>li li:before{
           content:"- "
-        }
-        #links-list>li:nth-child(2n-1){
-          margin-right: 6%;
         }
         #links-list h4{
           font-size: 20px;
@@ -423,7 +422,7 @@ export default function MetaTags() {
         .tool-desc {
           font-size:80%;
           color: #666;
-          margin: 3px 0 0 11px;
+          margin: 3px 0 0 10px;
         }
 
         @media (max-width: 600px) {
