@@ -67,6 +67,7 @@ export default function MetaTags() {
         <div className="grid">
 
           <select id="link-categories">
+            <option>Select Category...</option>
             <option value="all">All</option>
             <option value="ux-seo">UX/SEO</option>
             <option value="design">Graphic/UI Design</option>
