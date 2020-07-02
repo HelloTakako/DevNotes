@@ -1,11 +1,57 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Counter from '../components/Counter'
 import Footer from '../components/Footer'
 import BackToTopLink from '../components/BackToTopLink'
 
 export default function MetaTags() {
+
+  
+
+  useEffect(()=>{
+    
+    const category = document.getElementById('link-categories');
+    category.addEventListener('change', (e)=>{
+      const categoryValue = e.target.value;
+      Array.from(document.querySelectorAll('#links-list>li')).map(list=>{
+        list.classList.remove('show-category');
+      });
+      if(categoryValue === "all"){
+        const listArr = Array.from(document.querySelectorAll(".all"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
+      if(categoryValue === "design"){
+        const listArr = Array.from(document.querySelectorAll(".design"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
+      if(categoryValue === "frontend"){
+        const listArr = Array.from(document.querySelectorAll(".frontend"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
+      if(categoryValue === "backend"){
+        const listArr = Array.from(document.querySelectorAll(".backend"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
+      if(categoryValue === "ux-seo"){
+        const listArr = Array.from(document.querySelectorAll(".ux-seo"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
+
+    })
+  })
+
+  
 
   return (
     <div className="container">
@@ -20,16 +66,16 @@ export default function MetaTags() {
         </h1>
         <div className="grid">
 
-          {/* <select id="link-categories">
+          <select id="link-categories">
             <option value="all">All</option>
             <option value="ux-seo">UX/SEO</option>
             <option value="design">Graphic/UI Design</option>
             <option value="frontend">Front-end Developement</option>
             <option value="backend">Back-end Developement</option>
-          </select> */}
+          </select>
 
-          <ul className="links-list">
-          <li>
+          <ul id="links-list">
+          <li className="all design">
             <h4>Photos</h4>
             <ul>
               <li><a href="https://unsplash.com/" rel="noopener noreferrer" target="_blank">Unsplash</a></li>
@@ -44,7 +90,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design">
             <h4>Illustrations</h4>
             <ul>
               <li><a href="https://www.freepik.com/" rel="noopener noreferrer" target="_blank">Freepik</a></li>
@@ -58,7 +104,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design">
             <h4>Icons</h4>
             <ul>
               <li><a href="https://icomoon.io/#preview-free" rel="noopener noreferrer" target="_blank">IcoMoon</a></li>
@@ -85,7 +131,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design">
             <h4>Free Fonts</h4>
             <ul>
               <li><a href="https://fonts.google.com/" rel="noopener noreferrer" target="_blank">Google Fonts</a></li>
@@ -99,14 +145,14 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design frontend">
             <h4>Images Compression</h4>
             <ul>
               <li><a href="https://tinypng.com/" rel="noopener noreferrer" target="_blank">TinyPng</a></li>
             </ul>
           </li>
 
-          <li>
+          <li className="all ux-seo frontend">
             <h4>UX/SEO Analysis</h4>
             <ul>
               <li><a href="https://matomo.org/" rel="noopener noreferrer" target="_blank">Matomo</a><p className="tool-desc">A self-hosted alternative to Google Analytics which lets you do more analytics and UX research</p></li>
@@ -117,7 +163,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend backend">
             <h4>For Developers</h4>
             <ul>
               <li><a href="https://repl.it/" rel="noopener noreferrer" target="_blank">Repl</a><p className="tool-desc">Free, collaborative, in-browser IDE to code in 50+ languages</p></li>
@@ -140,7 +186,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend backend">
             <h4>Free HTML Templates</h4>
             <ul>
               <li><a href="https://html5up.net/" rel="noopener noreferrer" target="_blank">html5up.net</a></li>
@@ -151,7 +197,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all ux-seo design">
             <h4>Wireframing &amp; Mock-up</h4>
             <ul>
               <li><a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma</a></li>
@@ -160,7 +206,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend">
             <h4>Chrome Extension for Front-End Development</h4>
             <ul>
               <li><a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?hl=en" rel="noopener noreferrer" target="_blank">CSS Peeper</a></li>
@@ -171,7 +217,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design">
             <h4>Color Pallete</h4>
             <ul>
               <li><a href="https://color.adobe.com/create/color-wheel/" rel="noopener noreferrer" target="_blank">Adobe Color</a></li>
@@ -183,7 +229,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend">
             <h4>Practice Front end Skills or Challenge</h4>
             <ul>
               <li><a href="https://www.frontendmentor.io/" rel="noopener noreferrer" target="_blank">Front end Mentor</a></li>
@@ -194,7 +240,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend backend">
             <h4>Free Hosting</h4>
             <ul>
               <li><a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank">Netlify</a></li>
@@ -205,7 +251,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend backend">
             <h4>Regular Expressions(Regex)</h4>
             <ul>
               <li><a href="https://regexr.com/" rel="noopener noreferrer" target="_blank">RegExr</a></li>
@@ -213,7 +259,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend backend">
             <h4>APIs</h4>
             <ul>
               <li><a href="https://www.metaweather.com/" rel="noopener noreferrer" target="_blank">MetaWeather</a></li>
@@ -228,7 +274,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all design">
             <h4>Websites for Design Inspiration</h4>
             <ul>       
               <li><a href="https://dribbble.com/" rel="noopener noreferrer" target="_blank">Dribbble</a></li>
@@ -241,7 +287,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all frontend">
             <h4>Free Animation Library for Websites</h4>
             <ul>
               <li><a href="https://greensock.com/gsap/" rel="noopener noreferrer" target="_blank">GSAP</a></li>      
@@ -257,7 +303,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li>
+          <li className="all ux-seo design frontend backend">
             <h4>Misc.</h4>
             <ul>
               <li><a href="https://carbon.now.sh/" rel="noopener noreferrer" target="_blank">carbon</a></li>
@@ -281,38 +327,44 @@ export default function MetaTags() {
           cursor: pointer;
           opacity: 0.7;
         }
-        .links-list{
+        #links-list{
           width: 100%;
           display: flex;
           flex-wrap: wrap;
           align-self: baseline;
           padding-left: 0px;
         }
-        .links-list ul{
+        #links-list ul{
           padding-left: 0px!important;
         }
         li{
           list-style: none;
         }
-        .links-list>li{
+        #links-list>li{
           width: 47%;
+          transition: 0.5s;
+          display:none;
         }
-        .links-list>li li{
+        #links-list>li li{
           margin-bottom: 10px;
         }
-        .links-list>li li:before{
+        #links-list>li li:before{
           content:"- "
         }
-        .links-list>li:nth-child(2n-1){
+        #links-list>li:nth-child(2n-1){
           margin-right: 6%;
         }
-        .links-list h4{
+        #links-list h4{
           font-size: 20px;
           margin-bottom: 10px;
         }
-        .links-list a{
+        #links-list a{
           text-decoration: underline;
           color: inherit;
+        }
+        // to show/hide lists
+        .show-category{
+          display:block !important;
         }
        `}</style>
 
