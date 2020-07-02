@@ -175,7 +175,7 @@ export default function MetaTags() {
               <li><a href="https://cunningbot.com/" rel="noopener noreferrer" target="_blank">Cunning bot</a><p className="tool-desc">Domain Name Generator and Search Engine</p></li>
               <li><a href="https://www.codewars.com/" rel="noopener noreferrer" target="_blank">Codewars</a></li>
               <li><a href="https://dbdiagram.io/home" rel="noopener noreferrer" target="_blank">Dbdiagram</a><p className="tool-desc">Database Relationship Diagrams Design Tool</p></li>
-              <li><a href="https://caniuse.com/" rel="noopener noreferrer" target="_blank">Can I Use</a></li>
+              <li><a href="https://caniuse.com/" rel="noopener noreferrer" target="_blank">Can I Use</a><p className="tool-desc">Check browser support for modern web technologies</p></li>
               <li><a href="https://enjoycss.com/" rel="noopener noreferrer" target="_blank">Enjoy CSS</a></li>
               <li><a href="https://www.htmlwasher.com/" rel="noopener noreferrer" target="_blank">HTML Washer</a></li>
               <li><a href="https://validator.w3.org/" rel="noopener noreferrer" target="_blank">Markup Validator</a></li>
@@ -305,10 +305,10 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li className="all ux-seo design frontend backend">
+          <li className="all ux-seo frontend backend">
             <h4>Misc.</h4>
             <ul>
-              <li><a href="https://carbon.now.sh/" rel="noopener noreferrer" target="_blank">carbon</a></li>
+              <li><a href="https://carbon.now.sh/" rel="noopener noreferrer" target="_blank">carbon</a><p className="tool-desc">Create and share beautiful images of your source code</p></li>
               <li><a href="https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg?hl=en" rel="noopener noreferrer" target="_blank">Link to Text Fragment</a><p className="tool-desc">Chrome Extension for sharing documentation references easier</p></li>
             </ul>
           </li>
