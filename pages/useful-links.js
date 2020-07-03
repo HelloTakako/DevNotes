@@ -219,15 +219,17 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li className="all design">
+          <li className="all design frontend">
             <h4>Color Pallete</h4>
             <ul>
+              <li><a href="http://www.colorbox.io/" rel="noopener noreferrer" target="_blank">Colorbox by Lyft Design</a><p className="tool-desc">Generate a color pallete with customizable parameters (hue, saturation, brightness, number of colors)</p></li>
               <li><a href="https://color.adobe.com/create/color-wheel/" rel="noopener noreferrer" target="_blank">Adobe Color</a></li>
               <li><a href="https://materialuicolors.co/" rel="noopener noreferrer" target="_blank">material UI Colors</a></li>
               <li><a href="https://coolors.co/" rel="noopener noreferrer" target="_blank">Coolors</a></li>
               <li><a href="https://www.canva.com/colors/color-palette-generator/" rel="noopener noreferrer" target="_blank">Canva Color Pallete Generator</a><p className="tool-desc">Generate a color pallete from an image</p></li>
               <li><a href="https://www.canva.com/colors/color-wheel/" rel="noopener noreferrer" target="_blank">Canva Color Wheel</a></li>
-              <li><a href="https://htmlcolorcodes.com/" rel="noopener noreferrer" target="_blank">HTML Color Codes</a></li>  
+              <li><a href="https://htmlcolorcodes.com/" rel="noopener noreferrer" target="_blank">HTML Color Codes</a></li>
+              
             </ul>
           </li>
 
