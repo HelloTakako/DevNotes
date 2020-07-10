@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import Footer from '../components/Footer'
 import BackToTopLink from '../components/BackToTopLink'
@@ -47,6 +46,12 @@ export default function MetaTags() {
           list.classList.add('show-category');
         })
       }
+      if(categoryValue === "security"){
+        const listArr = Array.from(document.querySelectorAll(".security"));
+        listArr.map(list => {
+          list.classList.add('show-category');
+        })
+      }
 
     })
   })
@@ -73,6 +78,7 @@ export default function MetaTags() {
             <option value="design">Graphic/UI Design</option>
             <option value="frontend">Front-end Developement</option>
             <option value="backend">Back-end Developement</option>
+            <option value="security">Cyber Security</option>
           </select>
 
           <ul id="links-list">
@@ -333,6 +339,16 @@ export default function MetaTags() {
               <li><a href="https://animate.style/" rel="noopener noreferrer" target="_blank">animate.css</a></li>
               <li><a href="https://github.com/visionmedia/move.js" rel="noopener noreferrer" target="_blank">move.js</a></li>
               <li><a href="http://velocityjs.org/" rel="noopener noreferrer" target="_blank">velocity.js</a></li>
+            </ul>
+          </li>
+
+          <li className="all security">
+            <h4>Cyber Security</h4>
+            <ul>
+              <li><a href="https://haveibeenpwned.com/" rel="noopener noreferrer" target="_blank">';--have i been pwned?</a><p className="tool-desc">Check if you have an account that has been compromised in a data breach</p></li>
+              <li><a href="https://owasp.org/www-project-top-ten/" rel="noopener noreferrer" target="_blank">OWASP Top 10</a><p className="tool-desc">Represents a broad consensus about the most critical security risks to web applications</p></li>
+              <li><a href="https://cheatsheetseries.owasp.org/" rel="noopener noreferrer" target="_blank">OWASP Cheatsheet Series</a><p className="tool-desc">A concise collection of information on specific application security topics</p></li>
+              <li><a href="https://owasp.org/www-project-web-security-testing-guide/" rel="noopener noreferrer" target="_blank">OWASP Web Security Testing Guide</a></li>
             </ul>
           </li>
 
