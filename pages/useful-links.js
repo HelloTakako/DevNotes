@@ -188,7 +188,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li className="all frontend backend">
+          <li className="all design frontend backend">
             <h4>Free HTML Templates</h4>
             <ul>
               <li><a href="https://html5up.net/" rel="noopener noreferrer" target="_blank">html5up.net</a></li>
@@ -244,6 +244,15 @@ export default function MetaTags() {
             </ul>
           </li>
 
+          <li className="all design frontend">
+            <h4>UI Frameworks</h4>
+            <ul>
+              <li><a href="https://ant.design/" rel="noopener noreferrer" target="_blank">Ant Design</a><p className="tool-desc">For Angular, React.js, Vue.js</p></li>
+              <li><a href="https://material-ui.com/" rel="noopener noreferrer" target="_blank">Material UI</a><p className="tool-desc">For React.js</p></li>
+              <li><a href="https://material.angular.io/" rel="noopener noreferrer" target="_blank">Angular Material</a><p className="tool-desc">For Angular</p></li>
+            </ul>
+          </li>
+
           <li className="all frontend backend">
             <h4>Free Hosting</h4>
             <ul>
@@ -260,6 +269,17 @@ export default function MetaTags() {
             <ul>
               <li><a href="https://regexr.com/" rel="noopener noreferrer" target="_blank">RegExr</a></li>
               <li><a href="https://regex101.com/" rel="noopener noreferrer" target="_blank">RegEx101</a></li>
+            </ul>
+          </li>
+
+          <li className="all frontend backend">
+            <h4>Free Text Editor</h4>
+            <ul>
+              <li><a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a><p className="tool-desc">Popular IDE with bunch of useful extensions</p></li>
+              <li><a href="https://atom.io/" rel="noopener noreferrer" target="_blank">Atom</a></li>
+              <li><a href="https://www.sublimetext.com/" rel="noopener noreferrer" target="_blank">Sublime Text</a></li>
+              <li><a href="https://www.vim.org/" rel="noopener noreferrer" target="_blank">Vim</a><p className="tool-desc">For hardcore programmers</p></li>
+              <li><a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a></li>
             </ul>
           </li>
 
