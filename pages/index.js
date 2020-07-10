@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main>
         <h1 className="title">
         &#9998;Dev Notes
@@ -51,7 +53,6 @@ export default function Home() {
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;

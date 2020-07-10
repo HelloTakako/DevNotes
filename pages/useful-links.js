@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 import BackToTopLink from '../components/BackToTopLink'
 
@@ -65,6 +66,7 @@ export default function MetaTags() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main>
         <h1 className="title">
         &#9998;Useful Links
@@ -162,6 +164,7 @@ export default function MetaTags() {
           <li className="all ux-seo frontend">
             <h4>UX/SEO Analysis</h4>
             <ul>
+              <li><a href="https://analytics.google.com" rel="noopener noreferrer" target="_blank">Google Analytics</a></li>
               <li><a href="https://matomo.org/" rel="noopener noreferrer" target="_blank">Matomo</a><p className="tool-desc">A self-hosted alternative to Google Analytics which lets you do more analytics and UX research</p></li>
               <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" rel="noopener noreferrer" target="_blank">Lighthouse</a><p className="tool-desc">For webpage audits. Available on Google Chrome Extension / Chrome Dev Tools.</p></li>
               <li><a href="https://developers.google.com/speed/pagespeed/insights/" rel="noopener noreferrer" target="_blank">Google Speed Insights</a></li>
@@ -199,7 +202,7 @@ export default function MetaTags() {
               <li><a href="https://responsively.app/" rel="noopener noreferrer" target="_blank">Responsively App</a></li>
               <li><a href="https://ngrok.com/" rel="noopener noreferrer" target="_blank">ngrok</a><p className="tool-desc">Share remote tunnels from localhost to external servers (so for websites or web apps) with http/https</p></li>
               <li><a href="http://youmightnotneedjquery.com/" rel="noopener noreferrer" target="_blank">You might not need jQuery</a><p className="tool-desc">Vanilla JavaScript code snippets alternative to jQuery</p></li>
-              <li><a href="https://yoksel.github.io/flex-cheatsheet/" rel="noopener noreferrer" target="_blank">Flexbox Cheatsheet</a></li>
+              <li><a href="https://yoksel.github.io/flex-cheatsheet/" rel="noopener noreferrer" target="_blank">Flexbox Cheatsheet</a><p className="tool-desc">CSS Flexbox property cheatsheet</p></li>
             </ul>
           </li>
 
@@ -226,6 +229,7 @@ export default function MetaTags() {
           <li className="all frontend">
             <h4>Chrome Extension for Front-End Development</h4>
             <ul>
+              <li><a href="https://www.wappalyzer.com/" rel="noopener noreferrer" target="_blank">Wappalyser</a><p className="tool-desc">Find out what websites are built with. Available both on browser and as an extension</p></li>
               <li><a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?hl=en" rel="noopener noreferrer" target="_blank">CSS Peeper</a></li>
               <li><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" rel="noopener noreferrer" target="_blank">Whatfont</a></li>
               <li><a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh" rel="noopener noreferrer" target="_blank">JSON viewer</a></li>
@@ -244,7 +248,6 @@ export default function MetaTags() {
               <li><a href="https://www.canva.com/colors/color-palette-generator/" rel="noopener noreferrer" target="_blank">Canva Color Pallete Generator</a><p className="tool-desc">Generate a color pallete from an image</p></li>
               <li><a href="https://www.canva.com/colors/color-wheel/" rel="noopener noreferrer" target="_blank">Canva Color Wheel</a></li>
               <li><a href="https://htmlcolorcodes.com/" rel="noopener noreferrer" target="_blank">HTML Color Codes</a></li>
-              
             </ul>
           </li>
 
@@ -342,7 +345,7 @@ export default function MetaTags() {
             </ul>
           </li>
 
-          <li className="all security">
+          <li className="all frontend backend security">
             <h4>Cyber Security</h4>
             <ul>
               <li><a href="https://haveibeenpwned.com/" rel="noopener noreferrer" target="_blank">';--have i been pwned?</a><p className="tool-desc">Check if you have an account that has been compromised in a data breach</p></li>
@@ -418,7 +421,6 @@ export default function MetaTags() {
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;

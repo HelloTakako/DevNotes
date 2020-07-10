@@ -93,22 +93,6 @@ Before Starting with Front-end frameworks, you need to know ES 6 Features like:
 *callbacks 
 
 
-Useful Chrome Extension for Front-End Developer
-- CSS Peeper
-- Whatfont
-- JSON viewer
-- Color contrast checker
-- Colorpick eyedropper
-- Responsive web design tester
-
-
-Useful websites for Web Developers
-- Enjoy CSS
-- Can I Use 
-- HTML Washer 
-- Markup Validator 
-- Pexels 
-- Google fonts
 
 Important JavaScript concept you should know
 - Hoisting 
