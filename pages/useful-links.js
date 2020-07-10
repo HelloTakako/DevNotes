@@ -165,10 +165,19 @@ export default function MetaTags() {
           </li>
 
           <li className="all frontend backend">
-            <h4>For Developers</h4>
+            <h4>Online Code Editors</h4>
             <ul>
               <li><a href="https://repl.it/" rel="noopener noreferrer" target="_blank">Repl</a><p className="tool-desc">Free, collaborative, in-browser IDE to code in 50+ languages</p></li>
-              <li><a href="https://codeshare.io/" rel="noopener noreferrer" target="_blank">Codeshare</a></li>
+              <li><a href="https://codepen.io/" rel="noopener noreferrer" target="_blank">Codepen</a></li>
+              <li><a href="https://codeshare.io/" rel="noopener noreferrer" target="_blank">Codeshare</a><p className="tool-desc">Share Code in Real-time</p></li>
+              <li><a href="https://jsfiddle.net/" rel="noopener noreferrer" target="_blank">JSFiddle</a></li>
+              
+            </ul>
+          </li>
+
+          <li className="all frontend backend">
+            <h4>For Developers</h4>
+            <ul>
               <li><a href="https://devhints.io/" rel="noopener noreferrer" target="_blank">Devhints</a></li>
               <li><a href="https://domainr.com/" rel="noopener noreferrer" target="_blank">Domainr</a><p className="tool-desc">Domain name search</p></li>
               <li><a href="https://codinghub.tips/" rel="noopener noreferrer" target="_blank">Coding hub tips</a></li> 
@@ -312,7 +321,7 @@ export default function MetaTags() {
           </li>
 
           <li className="all frontend">
-            <h4>Free Animation Library for Websites</h4>
+            <h4>JavaScript Animation Library</h4>
             <ul>
               <li><a href="https://greensock.com/gsap/" rel="noopener noreferrer" target="_blank">GSAP</a></li>      
               <li><a href="https://elrumordelaluz.github.io/csshake/" rel="noopener noreferrer" target="_blank">CSSHake</a></li>
