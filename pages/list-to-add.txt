@@ -20,28 +20,6 @@ Original lists: https://twitter.com/ravinwashere
   </ul>
 </li>
 
-Useful VS Code keyboard Shortcuts.
-
-Ctrl + Shift + K -> Delete Line
-Ctrl + Shift + Enter -> Insert Line Above
-Alt + Up (Down) -> Move Line Up (Down)
-Shift + Alt + Up (Down) -> copy Line Up (Down)
-Ctrl + / -> Toggle Line Comment
-Ctrl + U -> Undo Last Cursor Operation
-Ctrl + Space -> Trigger Suggest
-Ctrl + Shift + \ -> Jump to Matching Bracket
-Ctrl + Shift + Space -> Trigger Parameter Hints
-Shift + Alt + F -> Format Document
-Ctrl + . -> Quick Fix
-Ctrl + KM -> Change Language Mode
-Ctrl + KF -> Close Folder
-Ctrl + \ -> Split Editor
-Ctrl + K Z -> Toggle Zen Mode
-Ctrl + , -> Open Setting
-Ctrl + ' -> Toggle Integrated Terminal
-Ctrl + B -> Toggle Sidebar Visibility
-
-
 10 JavaScript image manipulation libraries!
 Grade
 Pica

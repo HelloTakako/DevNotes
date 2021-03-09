@@ -1,63 +1,35 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import BackToTopLink from '../components/BackToTopLink';
+import Footer from '../components/Footer';
 
-export default function Home() {
-
+export default function JavaScript() {
   return (
     <div className="container">
       <Head>
-        <title>Dev Notes</title>
+        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main>
-        <h1 className="title">
-        &#9998;Dev Notes
-        </h1>
-
-        {/* Don't add className to <Link> tag, add it to <a> tag. */}
-        <div className="grid">
-          <Link href="meta-tags">
-            <a className="card">
-              <h3>Meta Tags &rarr;</h3>
-              <p>Meta tags cheatsheet for SEO</p>
-            </a>
-          </Link>
-          <Link href="/htaccess">
-            <a className="card">
-              <h3>.htaccess &rarr;</h3>
-              <p>Apache .htaccess configuration cheatsheet</p>
-            </a>
-          </Link>
-          <Link href="/robots-txt">
-            <a className="card">
-              <h3>robots.txt &rarr;</h3>
-              <p>Manage search engine crawlers traffic</p>
-            </a>
-          </Link>
-          <Link href="/keyboard-shortcuts">
-            <a className="card">
-              <h3>Keyboard Shortcuts &rarr;</h3>
-              <p>Useful Keyboard Shortcuts</p>
-            </a>
-          </Link>
-          <Link href="/devtools">
-            <a className="card">
-              <h3>Devtools &rarr;</h3>
-              <p>Our vital tool</p>
-            </a>
-          </Link>
-          <Link href="/useful-links">
-            <a className="card">
-              <h3>Useful Links &rarr;</h3>
-              <p>Resources in the globe</p>
-            </a>
-          </Link>
-        </div>
+        <h2>Useful VS Code keyboard Shortcuts (windows keyboard)</h2>
+        <pre>
+          {`
+Ctrl + Shift + K -> Delete Line
+Ctrl + Shift + Enter -> Insert Line Above
+Alt + Up (Down) -> Move Line Up (Down)
+Shift + Alt + Up (Down) -> copy Line Up (Down)
+Ctrl + / -> Toggle Line Comment
+Ctrl + U -> Undo Last Cursor Operation
+Shift + Alt + F -> Format Document
+Ctrl + . -> Quick Fix
+Ctrl + , -> Open Setting
+Ctrl + B -> Toggle Sidebar Visibility
+`}
+        </pre>
+        <br />
+        <br />
+        <BackToTopLink />
       </main>
 
       <Footer />
@@ -65,6 +37,7 @@ export default function Home() {
       <style jsx>{`
         .container {
           min-height: 100vh;
+          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -188,5 +161,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
