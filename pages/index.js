@@ -27,30 +27,42 @@ export default function Home() {
               <p>Meta tags cheatsheet for SEO</p>
             </a>
           </Link>
-          <Link href="/htaccess">
+          {/* <Link href="/htaccess">
             <a className="card">
               <h3>.htaccess &rarr;</h3>
               <p>Apache .htaccess configuration cheatsheet</p>
             </a>
-          </Link>
-          <Link href="/robots-txt">
+          </Link> */}
+          {/* <Link href="/robots-txt">
             <a className="card">
               <h3>robots.txt &rarr;</h3>
               <p>Manage search engine crawlers traffic</p>
             </a>
-          </Link>
+          </Link> */}
           <Link href="/keyboard-shortcuts">
             <a className="card">
               <h3>Keyboard Shortcuts &rarr;</h3>
               <p>Useful Keyboard Shortcuts</p>
             </a>
           </Link>
-          <Link href="/devtools">
+          <Link href="/graphql">
+            <a className="card">
+              <h3>GraphQL &rarr;</h3>
+              <p>GraphQL</p>
+            </a>
+          </Link>
+          <Link href="/react-hooks">
+            <a className="card">
+              <h3>React Hooks &rarr;</h3>
+              <p>React Hooks</p>
+            </a>
+          </Link>
+          {/* <Link href="/devtools">
             <a className="card">
               <h3>Devtools &rarr;</h3>
               <p>Our vital tool</p>
             </a>
-          </Link>
+          </Link> */}
           <Link href="/useful-links">
             <a className="card">
               <h3>Useful Links &rarr;</h3>
