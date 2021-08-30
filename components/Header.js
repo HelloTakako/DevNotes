@@ -60,6 +60,7 @@ const Nav = styled.header`
   justify-content: center;
   align-items: center;
   background-color: #222;
+  margin-bottom: 50px;
   ul {
     display: flex;
     justify-content: center;

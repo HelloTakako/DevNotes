@@ -63,7 +63,7 @@ export default function ReactHooks() {
             Reference: https://qiita.com/ttk/items/9a9ea632f88c48f0c2c6
           </small>
           <pre>{`
-          import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Hoge = () => {
   const [count, setCount] = useState(0);
@@ -189,6 +189,14 @@ const MainWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  pre {
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background: #111;
+    padding: 20px;
+  }
 `;
 
 const Section = styled.section`
