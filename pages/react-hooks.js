@@ -1,12 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styled from 'styled-components';
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import BackToTopLink from '../components/BackToTopLink'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import BackToTopLink from '../components/BackToTopLink';
 
 export default function ReactHooks() {
-
   return (
     <div className="container">
       <Head>
@@ -15,38 +14,42 @@ export default function ReactHooks() {
       </Head>
 
       <Header />
-        <h1 className="title">
-            &#9998;React Hooks
-        </h1>
+      <h1 className="title">&#9998;React Hooks</h1>
       <p>React hooks are functions you can use inside functional components.</p>
-      <main>
-          <Section>
-        <h2>useState</h2>
-        <p><code>useState</code> allows you to manage states inside your components.</p>
+      <MainWrapper>
+        <Section>
+          <h2>useState</h2>
+          <p>
+            <code>useState</code> allows you to manage states inside your
+            components.
+          </p>
         </Section>
-          <Section>
-        <h2>useEffect</h2>
-        <p><code>useEffect</code> adds side effects to your components.<br/>
-        Side Effects as in:</p>
-        <ul>
-          <li>
-            Change the DOM created by React
-          </li>
-          <li>
-            Communication with API
-          </li>
-          <li>
-            Asynchronous tasks
-          </li>
-          <li>
-            console.log
-          </li>
+        <Section>
+          <h2>useEffect</h2>
+          <p>
+            <code>useEffect</code> adds side effects to your components.
+            <br />
+            Side Effects as in:
+          </p>
+          <ul>
+            <li>Change the DOM created by React</li>
+            <li>Communication with API</li>
+            <li>Asynchronous tasks</li>
+            <li>console.log</li>
           </ul>
-          <p>With this hook, you can run side effects after the rendering of the component, or after the unmounting of the component.<br />
-          Unmount means, deleting/removing a component from the DOM.</p>
+          <p>
+            With this hook, you can run side effects after the rendering of the
+            component, or after the unmounting of the component.
+            <br />
+            Unmount means, deleting/removing a component from the DOM.
+          </p>
           <h4>Clean-up function</h4>
-          <p>When you return a function inside useEffect, the function will run when the component unmounts, or when the side effect re-runs.<br />
-          This returned function is called "Clean-up function".</p>
+          <p>
+            When you return a function inside useEffect, the function will run
+            when the component unmounts, or when the side effect re-runs.
+            <br />
+            This returned function is called "Clean-up function".
+          </p>
           <pre>{`
             useEffect(() => {
               return () => {
@@ -54,23 +57,53 @@ export default function ReactHooks() {
               }
             });
           `}</pre>
+
+          <h4>Summary</h4>
+          <small>
+            Reference: https://qiita.com/ttk/items/9a9ea632f88c48f0c2c6
+          </small>
+          <pre>{`
+          import { useState, useEffect } from "react";
+
+const Hoge = () => {
+  const [count, setCount] = useState(0);
+
+  const countUp = () => {
+    setCount(count => count + 1);
+  }
+
+  useEffect(() => {
+    console.log("component did mount");
+  }, []);
+
+  useEffect(() => {
+    console.log("component did update");
+    console.log(\`current count is \${count}\`);
+  }, [count])
+
+  useEffect(() => {
+    return () => {
+      console.log("component will unmount");
+    };
+  }, [])
+
+  return (
+    <>
+      Current count：{count}
+      <button onClick={countUp}>
+        count up!
+      </button>
+    </>
+  );
+}`}</pre>
         </Section>
-          <BackToTopLink />
-      </main>
+        <BackToTopLink />
+      </MainWrapper>
       <Footer />
 
       <style jsx>{`
         .container {
           min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -146,8 +179,17 @@ export default function ReactHooks() {
         }
       `}</style>
     </div>
-  )
+  );
 }
+
+const MainWrapper = styled.main`
+  padding: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Section = styled.section`
   padding: 20px 0;
