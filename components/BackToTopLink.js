@@ -11,6 +11,8 @@ export default function BackToTopLink() {
           a {
             margin-top: 50px;
             text-decoration: underline;
+            display: block;
+            text-align: center;
           }
           a:hover {
             cursor: pointer;
