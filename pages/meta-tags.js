@@ -1,12 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import Header from '../components/Header'
-import Counter from '../components/Counter'
-import Footer from '../components/Footer'
-import BackToTopLink from '../components/BackToTopLink'
+import Header from '../components/Header';
+import Counter from '../components/Counter';
+import Footer from '../components/Footer';
+import BackToTopLink from '../components/BackToTopLink';
 
 export default function MetaTags() {
-
   return (
     <div className="container">
       <Head>
@@ -16,71 +15,100 @@ export default function MetaTags() {
 
       <Header />
       <main>
-        <h1 className="title">
-        &#9998;Meta Tags
-        </h1>
+        <h1 className="title">&#9998;Meta Tags</h1>
         <div className="grid">
           <Counter />
 
-                <div>
-                  <dl>
-                      <dt>On-Page</dt>
-                      <dd>
-                      For...<br />
-                      - meta title: 50-60(max.75) characters. e.g. Your page title | Your brand name <br />
-                      - meta description: 135-160(For mobile, &lt;130) characters. Avoid duplicated description over pages.(Google can penalize your site for it.)<br />
-                      - each content-oriented page, minimum 400 words of content to be indexed correctly.
-                  But 1000+ is recommended.<br />
-                  - URL...less than 90 characters are recommended.<br />
-                  Dynamic URL is not recommended for SEO. Consider using perma-links. e.g. Apache: mod_rewrite 
-                      </dd>
-                      <dt>On-Site</dt>
-                      <dd> The structure of the webpage. Avoid duplicated pages, clear structure for crawlers, internal linking.<br />
-                      robots.txt<br />
-                      sitemap.xml
-                      </dd>
-                      <dt>Off-Site</dt>
-                      <dd>Outside of the webpage. Third parties, other webpages, Social medias, etc.<br />
-                      Google Analytics, Google Search Console.
-                      </dd>
-                  </dl>
+          <div>
+            <dl>
+              <dt>On-Page</dt>
+              <dd>
+                For...
+                <br />
+                - meta title: 50-60(max.75) characters. e.g. Your page title |
+                Your brand name <br />
+                - meta description: 135-160(For mobile, &lt;130) characters.
+                Avoid duplicated description over pages.(Google can penalize
+                your site for it.)
+                <br />
+                - each content-oriented page, minimum 400 words of content to be
+                indexed correctly. But 1000+ is recommended.
+                <br />
+                - URL...less than 90 characters are recommended.
+                <br />
+                Dynamic URL is not recommended for SEO. Consider using
+                perma-links. e.g. Apache: mod_rewrite
+              </dd>
+              <dt>On-Site</dt>
+              <dd>
+                {' '}
+                The structure of the webpage. Avoid duplicated pages, clear
+                structure for crawlers, internal linking.
+                <br />
+                robots.txt
+                <br />
+                sitemap.xml
+              </dd>
+              <dt>Off-Site</dt>
+              <dd>
+                Outside of the webpage. Third parties, other webpages, Social
+                medias, etc.
+                <br />
+                Google Analytics, Google Search Console.
+              </dd>
+            </dl>
 
-                  <h3>Code Snippets</h3>
+            <h3>Code Snippets</h3>
 
-                  <h4>Basic Meta tags</h4>
-                  <pre>{`<meta charset="utf-8">
+            <h4>Basic Meta tags</h4>
+            <pre>{`<meta charset="utf-8">
           <title>Your Page Title</title>
           <link rel="canonical" href="https://www.#yoursite#.com/" />
           <meta name="description" content="Your description">
           <meta name="viewport" content="width=device-width, initial-scale=1">`}</pre>
 
-                  <h4>OG meta tags</h4>
-                  <pre>
-                  &lt;meta property=”og:type” content=”article” /&gt; <br />
-                  &lt;meta property=”og:title” content=”title of the page” /&gt;<br />
-                  &lt;meta property=”og:description” content=”description of the page” /&gt;<br />
-                  &lt;meta property=”og:image” content=”image thmbnail” /&gt;<br />
-                  &lt;meta property=”og:url” content=”your url” /&gt;<br />
-                  &lt;meta property=”og:site_name” content=”site name” /&gt;
-                  </pre>
+            <h4>OG meta tags</h4>
+            <pre>
+              &lt;meta property=”og:type” content=”article” /&gt; <br />
+              &lt;meta property=”og:title” content=”title of the page” /&gt;
+              <br />
+              &lt;meta property=”og:description” content=”description of the
+              page” /&gt;
+              <br />
+              &lt;meta property=”og:image” content=”image thmbnail” /&gt;
+              <br />
+              &lt;meta property=”og:url” content=”your url” /&gt;
+              <br />
+              &lt;meta property=”og:site_name” content=”site name” /&gt;
+            </pre>
 
-                  <h4>Twitter card meta tags</h4>
-                  <pre>
-                  &lt;meta name=”twitter:title” content=”title of the page”&gt;<br />
-                  &lt;meta name=”twitter:description” content=”description of the page”&gt;<br />
-                  &lt;meta name=”twitter:image” content=”image thumbnail”&gt;<br />
-                  &lt;meta name=”twitter:site” content=”@username”&gt;<br />
-                  &lt;meta name=”twitter:creator” content=”@username”&gt;
-                  </pre>
-                  <div>
-                  <p>SDM...Structured Data Markup</p>
-                  <p>Microdata...https://en.wikipedia.org/wiki/Microdata_(HTML)<br />
-                  Google's Rich Snippet Testing Tool<br />
-                  JSON-LD...https://en.wikipedia.org/wiki/JSON-LD<br/>
-                  </p>
+            <h4>Twitter card meta tags</h4>
+            <pre>
+              &lt;meta name=”twitter:title” content=”title of the page”&gt;
+              <br />
+              &lt;meta name=”twitter:description” content=”description of the
+              page”&gt;
+              <br />
+              &lt;meta name=”twitter:image” content=”image thumbnail”&gt;
+              <br />
+              &lt;meta name=”twitter:site” content=”@username”&gt;
+              <br />
+              &lt;meta name=”twitter:creator” content=”@username”&gt;
+            </pre>
+            <div>
+              <p>SDM...Structured Data Markup</p>
+              <p>
+                Microdata...https://en.wikipedia.org/wiki/Microdata_(HTML)
+                <br />
+                Google's Rich Snippet Testing Tool
+                <br />
+                JSON-LD...https://en.wikipedia.org/wiki/JSON-LD
+                <br />
+              </p>
 
-                  <h4>JSON-LD</h4>
-                  <pre>{`<script type="application/ld+json">
+              <h4>JSON-LD</h4>
+              <pre>
+                {`<script type="application/ld+json">
                   {
                       "@context": {
                       "name": "http://xmlns.com/foaf/0.1/name",
@@ -97,14 +125,11 @@ export default function MetaTags() {
                   }
                   </script>
                   `}
-                  </pre>
-              </div> 
-              <BackToTopLink />
+              </pre>
+            </div>
+            <BackToTopLink />
           </div>
-          
         </div>
-        
-        
       </main>
 
       <Footer />
@@ -113,30 +138,30 @@ export default function MetaTags() {
         dt {
           margin-bottom: 10px;
           font-size: 20px;
-          font-weight: bold; 
-       }
-       dd{
-           margin-bottom: 20px;
-       }
-       pre{
-           width: inherit;
-           background-color: #333;
-           color: white;
-           padding: 10px;
-           border-radius: 5px;
-           word-wrap: break-word;
-           margin-bottom: 20px;
-           overflow: scroll;
-           font-size: 16px;
-       }
-       
-       h3{
-           font-size: 2.5rem;
-           font-weight: bold;
-           color: green;
-           margin-bottom: 10px;
-       }
-       `}</style>
+          font-weight: bold;
+        }
+        dd {
+          margin-bottom: 20px;
+        }
+        pre {
+          width: inherit;
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          word-wrap: break-word;
+          margin-bottom: 20px;
+          overflow: scroll;
+          font-size: 16px;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: green;
+          margin-bottom: 10px;
+        }
+      `}</style>
 
       <style jsx>{`
         .container {
@@ -232,11 +257,7 @@ export default function MetaTags() {
         * {
           box-sizing: border-box;
         }
-
-        
       `}</style>
-
-      
     </div>
-  )
+  );
 }

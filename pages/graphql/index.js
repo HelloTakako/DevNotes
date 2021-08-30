@@ -1,10 +1,24 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 
-import Header from '../components/Header';
-import BackToTopLink from '../components/BackToTopLink';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import BackToTopLink from '../../components/BackToTopLink';
+import Footer from '../../components/Footer';
 
 export default function Devtools() {
+  const Nav = styled.section`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid;
+    li {
+      list-style: none;
+      &:before {
+        content: '・';
+      }
+    }
+  `;
+
   return (
     <div className="container">
       <Head>
@@ -14,40 +28,74 @@ export default function Devtools() {
 
       <Header />
       <main>
-        <h2>Tabs</h2>
-        <ul>
+        <h1 className="title">&#9998;GraphQL</h1>
+        <Nav>
           <li>
-            <h3>Elements</h3>
+            <a href="#apollo">Apollo Client</a>
+          </li>
+          <li>
+            <a href="#schema">Schema</a>
+          </li>
+          <li>
+            <a href="#resolver">Resolver</a>
+          </li>
+        </Nav>
+        <section id="apollo">
+          <h2>Apollo Client</h2>
+          <p>
+            Apollo Client ... GraphQL client. A library to deal with GraphQL
+            client simpler.
+          </p>
+          <div>
+            <pre>{`
+import { ApolloProvider } from 'react-apollo';
+import { ApolloClient } from 'apollo-client';
+import { HttpLink } from 'apollo-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+
+import App from './App';
+
+const GITHUB_BASE_URL = 'https://api.github.com/graphql';
+
+const httpLink = new HttpLink({
+  uri: GITHUB_BASE_URL,
+  headers: {
+    authorization: \`Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}\`
+  }
+});
+
+const cache = new InMemoryCache();
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache
+});
+`}</pre>
             <p>
-              For styling.
-              <br />
-              You can check HTML markups and CSS stylings.
+              <b>HttpLink</b>... Set a GraphQL endpoint
             </p>
-          </li>
-          <li>
-            <h3>Console</h3>
-          </li>
-          <li>
-            <h3>Sources</h3>
-          </li>
-          <li>
-            <h3>Network</h3>
-          </li>
-          <li>
-            <h3>Performance</h3>
-          </li>
-          <li>
-            <h3>Application</h3>
-          </li>
-          <li>
-            <h3>Security</h3>
-          </li>
-          <li>
-            <h3>Lighthouse</h3>
-          </li>
-        </ul>
-        <br />
-        <br />
+            <pre>
+              {`ReactDOM.render(
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
+);`}
+            </pre>
+            <p>
+              <b>Apollo Provider</b>... Wrap the whole app component
+            </p>
+          </div>
+        </section>
+        <section id="schema">
+          <h2>Schema</h2>
+        </section>
+        <section id="resolver">
+          <h2>Resolver</h2>
+        </section>
+        <section id="query">
+          <h2>Query</h2>
+        </section>
         <BackToTopLink />
       </main>
 
@@ -56,14 +104,10 @@ export default function Devtools() {
       <style jsx>{`
         .container {
           min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
         }
 
         main {
-          padding: 5rem 0;
+          padding: 5rem;
           flex: 1;
           display: flex;
           flex-direction: column;
