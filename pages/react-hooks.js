@@ -97,6 +97,18 @@ const Hoge = () => {
   );
 }`}</pre>
         </Section>
+        <Section>
+          <h2>useReducer</h2>
+          <p>
+            Returns <code>state</code> and <code>dispatch</code> function (a function to
+            send actions).
+            <br />
+            By using this hook, you can do state management in a component. So
+            it has similar usage with <code>useState</code>.
+          </p>
+          <h4>Syntax</h4>
+          <pre>{`{const [state, dispatch] = useReducer(reducer, initial state)}`}</pre>
+        </Section>
         <BackToTopLink />
       </MainWrapper>
       <Footer />
