@@ -11,6 +11,7 @@ export default function Home() {
       <Head>
         <title>Dev Notes</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
