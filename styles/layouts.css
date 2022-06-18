@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .regular-width-container {
+        @apply w-[85vw] mx-auto
+    }
+}
