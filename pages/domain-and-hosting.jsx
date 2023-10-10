@@ -1,12 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import React from 'react';
 
-import Header from '../components/Header'
-import BackToTopLink from '../components/BackToTopLink'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import BackToTopLink from '../components/BackToTopLink';
+import Footer from '../components/Footer';
 
 export default function DomainAndHosting() {
-
   return (
     <div className="container">
       <Head>
@@ -17,7 +16,8 @@ export default function DomainAndHosting() {
       <Header />
       <main>
         &#10155;Under Construction
-        <br /><br />
+        <br />
+        <br />
         <BackToTopLink />
       </main>
 
@@ -115,5 +115,5 @@ export default function DomainAndHosting() {
         }
       `}</style>
     </div>
-  )
+  );
 }

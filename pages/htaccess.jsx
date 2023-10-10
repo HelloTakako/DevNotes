@@ -1,11 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import React from 'react';
 
-import Header from '../components/Header'
-import BackToTopLink from '../components/BackToTopLink'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import BackToTopLink from '../components/BackToTopLink';
+import Footer from '../components/Footer';
 
 export default function Htaccess() {
-
   return (
     <div className="container">
       <Head>
@@ -16,7 +16,8 @@ export default function Htaccess() {
       <Header />
       <main>
         &#10155;Under Construction
-        <br /><br />
+        <br />
+        <br />
         <BackToTopLink />
       </main>
 
@@ -114,5 +115,5 @@ export default function Htaccess() {
         }
       `}</style>
     </div>
-  )
+  );
 }
