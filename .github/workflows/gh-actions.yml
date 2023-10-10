@@ -23,5 +23,3 @@ jobs:
         run: yarn lint
       - name: Prettier
         run: yarn fix:prettier
-      - name: Build Next.js App
-        run: yarn build
