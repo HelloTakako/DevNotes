@@ -23,3 +23,5 @@ jobs:
         run: yarn lint
       - name: Prettier
         run: yarn fix:prettier
+      - name: clean cache
+        run: yarn cache clean
