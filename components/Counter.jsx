@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Counter = () => {
     function count(e){
         e.preventDefault();

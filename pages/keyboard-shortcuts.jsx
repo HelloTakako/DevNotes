@@ -1,3 +1,5 @@
+import React from 'react';
+
 import BackToTopLink from '../components/BackToTopLink';
 import Footer from '../components/Footer';
 
