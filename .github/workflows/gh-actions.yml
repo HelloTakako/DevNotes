@@ -1,0 +1,25 @@
+# ワークフローの名前（任意）
+name: gh-actions
+# mainブランチに対してPRが作成されたタイミングをトリガーとする
+on:
+  pull_request:
+    branches:
+      - master
+# ワークフローで実行されるジョブをグループ化
+jobs:
+  # jobの名前を定義
+  test:
+    # 最新バージョンのUbuntuLinuxランナーで実行するようにジョブを構成
+    runs-on: ubuntu-latest
+    # testジョブで実行されるステップをグループ化
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: install
+        run: yarn install
+      - name: ESLint
+        run: yarn lint
+      - name: Prettier
+        run: yarn fix:prettier

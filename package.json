@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "fix:prettier": "prettier --write ."
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
