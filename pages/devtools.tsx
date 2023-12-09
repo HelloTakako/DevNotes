@@ -54,7 +54,7 @@ export default function Devtools() {
 
       <Footer />
 
-      <style jsx>{`
+      <style>{`
         .container {
           min-height: 100vh;
           display: flex;

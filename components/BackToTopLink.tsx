@@ -7,7 +7,7 @@ export default function BackToTopLink() {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <style jsx>
+      <style>
         {`
           a {
             margin-top: 50px;
