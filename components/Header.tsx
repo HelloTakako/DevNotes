@@ -7,42 +7,42 @@ export default function Header() {
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            Home
           </Link>
         </li>
         <li>
           <Link href="/meta-tags">
-            <a>Meta Tags</a>
+            Meta Tags
           </Link>
         </li>
         <li>
           <Link href="/react-hooks">
-            <a>React Hooks</a>
+            React Hooks
           </Link>
         </li>
         <li>
           <Link href="/graphql">
-            <a>GraphQL</a>
+            GraphQL
           </Link>
         </li>
         <li>
           <Link href="/keyboard-shortcuts">
-            <a>Keyboard Shortcuts</a>
+            Keyboard Shortcuts
           </Link>
         </li>
         {/* <li>
           <Link href="/robots-txt">
-            <a>robots.txt</a>
+            robots.txt
           </Link>
         </li>
         <li>
           <Link href="/htaccess">
-            <a>.htaccess</a>
+            .htaccess
           </Link>
         </li> */}
         <li>
           <Link href="/useful-links">
-            <a>Useful Links</a>
+            Useful Links
           </Link>
         </li>
       </ul>

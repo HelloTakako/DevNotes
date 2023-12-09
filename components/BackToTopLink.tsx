@@ -5,7 +5,7 @@ export default function BackToTopLink() {
   return (
     <>
       <Link href="/">
-        <a>Home</a>
+        Home
       </Link>
       <style>
         {`

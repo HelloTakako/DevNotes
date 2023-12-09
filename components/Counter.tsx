@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Counter = () => {
-    function count(e){
-        e.preventDefault();
-        const count = document.getElementById('count');
-        const string = document.getElementById('string');
+  const [count, setCount] = useState<number | null>();
 
-        count.innerText = string.value.length;
-        ;
-    }
-    return(
-        <div className='counter'>
-            <textarea id="string" onChange={count}></textarea>
-            <span id="count">0</span>
+  return (
+    <div className="counter">
+      <textarea
+        id="string"
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+          setCount(e.target.value.length)
+        }
+      ></textarea>
+      <span id="count">{count}</span>
 
-            <style jsx>{`
+      <style>
+        {`
                 .counter {
                     margin-bottom: 20px;
                }
@@ -32,9 +32,9 @@ const Counter = () => {
                     color: black;
                }               
             `}
-            </style>
-        </div>
-        )
-    };
+      </style>
+    </div>
+  );
+};
 
 export default Counter;

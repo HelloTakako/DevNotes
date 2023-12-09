@@ -1,75 +1,71 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Home() {
-
   return (
     <div className="container">
       <Head>
         <title>Dev Notes</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
       <main>
-        <h1 className="title">
-        &#9998;Dev Notes
-        </h1>
+        <h1 className="title">&#9998;Dev Notes</h1>
 
-        {/* Don't add className to <Link> tag, add it to <a> tag. */}
+        {/* Don't add className to <Link> tag, add it to <div> tag. */}
         <div className="grid">
-          <Link href="meta-tags">
-            <a className="card">
+          <Link className="card" href="meta-tags">
+            <div className="card">
               <h3>Meta Tags &rarr;</h3>
               <p>Meta tags cheatsheet for SEO</p>
-            </a>
+            </div>
           </Link>
-          {/* <Link href="/htaccess">
-            <a className="card">
+          {/* <Link className="card" href="/htaccess">
+            <div className="card">
               <h3>.htaccess &rarr;</h3>
               <p>Apache .htaccess configuration cheatsheet</p>
-            </a>
+            </div>
           </Link> */}
-          {/* <Link href="/robots-txt">
-            <a className="card">
+          {/* <Link className="card" href="/robots-txt">
+            <div className="card">
               <h3>robots.txt &rarr;</h3>
               <p>Manage search engine crawlers traffic</p>
-            </a>
+            </div>
           </Link> */}
-          <Link href="/keyboard-shortcuts">
-            <a className="card">
+          <Link className="card" href="/keyboard-shortcuts">
+            <div className="card">
               <h3>Keyboard Shortcuts &rarr;</h3>
               <p>Useful Keyboard Shortcuts</p>
-            </a>
+            </div>
           </Link>
-          <Link href="/graphql">
-            <a className="card">
+          <Link className="card" href="/graphql">
+            <div className="card">
               <h3>GraphQL &rarr;</h3>
               <p>GraphQL</p>
-            </a>
+            </div>
           </Link>
-          <Link href="/react-hooks">
-            <a className="card">
+          <Link className="card" href="/react-hooks">
+            <div className="card">
               <h3>React Hooks &rarr;</h3>
               <p>React Hooks</p>
-            </a>
+            </div>
           </Link>
-          {/* <Link href="/devtools">
-            <a className="card">
+          {/* <Link className="card" href="/devtools">
+            <div className="card">
               <h3>Devtools &rarr;</h3>
               <p>Our vital tool</p>
-            </a>
+            </div>
           </Link> */}
-          <Link href="/useful-links">
-            <a className="card">
+          <Link className="card" href="/useful-links">
+            <div className="card">
               <h3>Useful Links &rarr;</h3>
               <p>Resources in the globe</p>
-            </a>
+            </div>
           </Link>
         </div>
       </main>
@@ -202,5 +198,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
