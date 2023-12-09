@@ -1,24 +1,23 @@
 import Head from 'next/head';
 import React from 'react';
-import styled from 'styled-components';
 
 import Header from '../../components/Header';
 import BackToTopLink from '../../components/BackToTopLink';
 import Footer from '../../components/Footer';
 
 export default function Devtools() {
-  const Nav = styled.section`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid;
-    li {
-      list-style: none;
-      &:before {
-        content: '・';
-      }
-    }
-  `;
+  // const Nav = styled.section`
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 100%;
+  //   border-bottom: 1px solid;
+  //   li {
+  //     list-style: none;
+  //     &:before {
+  //       content: '・';
+  //     }
+  //   }
+  // `;
 
   return (
     <div className="container">
@@ -30,7 +29,7 @@ export default function Devtools() {
       <Header />
       <main>
         <h1 className="title">&#9998;GraphQL</h1>
-        <Nav>
+        <ul>
           <li>
             <a href="#apollo">Apollo Client</a>
           </li>
@@ -40,7 +39,7 @@ export default function Devtools() {
           <li>
             <a href="#resolver">Resolver</a>
           </li>
-        </Nav>
+        </ul>
         <section id="apollo">
           <h2>Apollo Client</h2>
           <p>
