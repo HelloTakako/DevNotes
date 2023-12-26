@@ -2,10 +2,12 @@ import React from 'react';
 
 import BackToTopLink from '../components/BackToTopLink';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function KeyboardShortcuts() {
   return (
     <div>
+      <Header />
       <main className="regular-width-container">
         <h2>Useful VS Code keyboard Shortcuts</h2>
         <ul className="keyboard-shortcuts">

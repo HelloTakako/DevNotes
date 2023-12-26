@@ -7,8 +7,8 @@ import BackToTopLink from '../components/BackToTopLink';
 
 export default function MetaTags() {
   useEffect(() => {
-    const category:any = document.getElementById('link-categories');
-    category.addEventListener('change', (e:any) => {
+    const category: any = document.getElementById('link-categories');
+    category.addEventListener('change', (e: any) => {
       const categoryValue = e.target.value;
       Array.from(document.querySelectorAll('#links-list>li')).map((list) => {
         list.classList.remove('show-category');
@@ -1594,10 +1594,10 @@ export default function MetaTags() {
       <Footer />
 
       <style jsx>{`
-        a {
+        #links-list a {
           text-decoration: underline;
         }
-        a:hover {
+        #links-list a:hover {
           cursor: pointer;
           opacity: 0.7;
         }
@@ -1702,21 +1702,6 @@ export default function MetaTags() {
             pading: 0 3%;
             flex-direction: column;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
