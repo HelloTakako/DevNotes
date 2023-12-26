@@ -36,6 +36,9 @@ export default function Header() {
         <li>
           <Link href="/useful-links">Useful Links</Link>
         </li>
+        <li>
+          <Link href="/blog">Blog</Link>
+        </li>
       </ul>
 
       <style jsx>{`
