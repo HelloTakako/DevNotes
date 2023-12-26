@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
+import Image from 'next/image';
 
-import Header from '../components/Header';
-import BackToTopLink from '../components/BackToTopLink';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import BackToTopLink from '../../components/BackToTopLink';
+import Footer from '../../components/Footer';
 
 export default function AlgorithmsPage() {
   return (
@@ -19,11 +20,13 @@ export default function AlgorithmsPage() {
         <Image
           src="/assets/images/pages/algorithms/big-o-chart.png"
           width={500}
+          alt=""
         />
         <br />
         <Image
           src="/assets/images/pages/algorithms/big-o-complexity.png"
           width={500}
+          alt=""
         />
         <br />
         <small>reference: https://www.bigocheatsheet.com/</small>
