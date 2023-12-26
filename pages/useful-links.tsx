@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { ReactEventHandler, useEffect } from 'react';
 import Head from 'next/head';
 
 import Header from '../components/Header';
@@ -7,8 +7,8 @@ import BackToTopLink from '../components/BackToTopLink';
 
 export default function MetaTags() {
   useEffect(() => {
-    const category = document.getElementById('link-categories');
-    category.addEventListener('change', (e) => {
+    const category:any = document.getElementById('link-categories');
+    category.addEventListener('change', (e:any) => {
       const categoryValue = e.target.value;
       Array.from(document.querySelectorAll('#links-list>li')).map((list) => {
         list.classList.remove('show-category');
