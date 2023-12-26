@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = currentDate.getFullYear();
 
   return (
-      <footer>
-  <small>&copy; {currentYear} HelloTakako</small>
+    <footer>
+      <small>&copy; {currentYear} HelloTakako</small>
 
-  <style jsx>{`
+      <style jsx>{`
         footer {
           width: 100%;
           height: 100px;
@@ -24,7 +24,6 @@ export default function Footer() {
           align-items: center;
         }
       `}</style>
-      
-      </footer>
-  )
+    </footer>
+  );
 }
