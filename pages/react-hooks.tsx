@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styled from 'styled-components';
 import React from 'react';
 
 import Header from '../components/Header';
@@ -17,15 +16,15 @@ export default function ReactHooks() {
       <Header />
       <h1 className="title">&#9998;React Hooks</h1>
       <p>React hooks are functions you can use inside functional components.</p>
-      <MainWrapper>
-        <Section>
+      <div>
+        <section>
           <h2>useState</h2>
           <p>
             <code>useState</code> allows you to manage states inside your
             components.
           </p>
-        </Section>
-        <Section>
+        </section>
+        <section>
           <h2>useEffect</h2>
           <p>
             <code>useEffect</code> adds side effects to your components.
@@ -97,21 +96,21 @@ const Hoge = () => {
     </>
   );
 }`}</pre>
-        </Section>
-        <Section>
+        </section>
+        <section>
           <h2>useReducer</h2>
           <p>
-            Returns <code>state</code> and <code>dispatch</code> function (a function to
-            send actions).
+            Returns <code>state</code> and <code>dispatch</code> function (a
+            function to send actions).
             <br />
             By using this hook, you can do state management in a component. So
             it has similar usage with <code>useState</code>.
           </p>
           <h4>Syntax</h4>
           <pre>{`{const [state, dispatch] = useReducer(reducer, initial state)}`}</pre>
-        </Section>
+        </section>
         <BackToTopLink />
-      </MainWrapper>
+      </div>
       <Footer />
 
       <style jsx>{`
@@ -194,26 +193,3 @@ const Hoge = () => {
     </div>
   );
 }
-
-const MainWrapper = styled.main`
-  padding: 5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  pre {
-    font-size: 16px;
-    border-radius: 5px;
-    color: #fff;
-    background: #111;
-    padding: 20px;
-  }
-`;
-
-const Section = styled.section`
-  padding: 20px 0;
-  margin: 20px 0;
-  border-bottom: 1px solid #ccc;
-`;
