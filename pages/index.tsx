@@ -25,6 +25,12 @@ export default function Home() {
               <p>Meta tags cheatsheet for SEO</p>
             </div>
           </Link>
+          <Link className="card" href="clock">
+            <div className="card">
+              <h3>VAN to JP clock &rarr;</h3>
+              <p>Convert Van time to JP time</p>
+            </div>
+          </Link>
           {/* <Link className="card" href="/htaccess">
             <div className="card">
               <h3>.htaccess &rarr;</h3>
